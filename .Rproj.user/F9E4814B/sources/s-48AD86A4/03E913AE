@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/kparrish_website/teaching.Rmd",
     "project_path": "teaching.Rmd",
     "type": "r_markdown",
-    "hash": "553917672",
+    "hash": "340944190",
     "contents": "",
     "dirty": false,
     "created": 1645188514923.0,
@@ -13,15 +13,15 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "68,26",
-        "scrollLine": "59"
+        "cursorPosition": "27,0",
+        "scrollLine": "23"
     },
     "folds": "",
-    "lastKnownWriteTime": 1645188652,
+    "lastKnownWriteTime": 1645190789,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1645188652223,
+    "last_content_update": 1645190789864,
     "read_only": false,
     "read_only_alternatives": []
 }
