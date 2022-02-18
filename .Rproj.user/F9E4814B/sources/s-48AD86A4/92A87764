@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/kparrish_website/research_card.Rmd",
     "project_path": "research_card.Rmd",
     "type": "r_markdown",
-    "hash": "686153272",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1645191231103.0,
@@ -13,15 +13,15 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "53,3",
-        "scrollLine": "48"
+        "cursorPosition": "33,27",
+        "scrollLine": "29"
     },
     "folds": "",
-    "lastKnownWriteTime": 1645191754,
+    "lastKnownWriteTime": 1645193692,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1645191754547,
+    "last_content_update": 1645193692117,
     "read_only": false,
     "read_only_alternatives": []
 }
