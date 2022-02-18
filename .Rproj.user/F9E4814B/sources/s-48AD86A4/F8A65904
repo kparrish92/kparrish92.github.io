@@ -1,27 +1,26 @@
 {
-    "id": "2329C7EC",
-    "path": "~/Documents/GitHub/kparrish_website/about.Rmd",
-    "project_path": "about.Rmd",
+    "id": "F8A65904",
+    "path": "~/Documents/GitHub/kparrish_website/index.Rmd",
+    "project_path": "index.Rmd",
     "type": "r_markdown",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1645188856166.0,
+    "created": 1645190980123.0,
     "source_on_save": false,
-    "relative_order": 7,
+    "relative_order": 3,
     "properties": {
-        "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "79,4",
-        "scrollLine": "0"
+        "cursorPosition": "42,0",
+        "scrollLine": "40"
     },
     "folds": "",
-    "lastKnownWriteTime": 1645188742,
+    "lastKnownWriteTime": 1645191062,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1645188742,
+    "last_content_update": 1645191062071,
     "read_only": false,
     "read_only_alternatives": []
 }

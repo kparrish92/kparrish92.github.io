@@ -1,27 +1,27 @@
 {
-    "id": "03E913AE",
-    "path": "~/Documents/GitHub/kparrish_website/teaching.Rmd",
-    "project_path": "teaching.Rmd",
+    "id": "92A87764",
+    "path": "~/Documents/GitHub/kparrish_website/research_card.Rmd",
+    "project_path": "research_card.Rmd",
     "type": "r_markdown",
-    "hash": "340944190",
+    "hash": "686153272",
     "contents": "",
     "dirty": false,
-    "created": 1645188514923.0,
+    "created": 1645191231103.0,
     "source_on_save": false,
-    "relative_order": 8,
+    "relative_order": 4,
     "properties": {
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "27,0",
-        "scrollLine": "23"
+        "cursorPosition": "53,3",
+        "scrollLine": "48"
     },
     "folds": "",
-    "lastKnownWriteTime": 1645190789,
+    "lastKnownWriteTime": 1645191754,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1645190789864,
+    "last_content_update": 1645191754547,
     "read_only": false,
     "read_only_alternatives": []
 }
