@@ -1,0 +1,20 @@
+---
+title: "Kyle Parrish"
+description: |
+site: distill::distill_website
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=F, message=F, warning=F)
+```
+
+```{css echo=FALSE}
+d-title h1 {
+  font-size: 0px;
+}
+```
+
+<div class="layout-chunk" data-layout="l-screen">
+<div id="particles-js"></div>
+</div>
+<script src="./assets/particles.min.js"></script>
+<script src="./assets/app.js"></script>

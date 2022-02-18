@@ -1,0 +1,29 @@
+---
+title: "Research"
+---
+
+
+# Research
+
+## H2
+
+Broadly, I am interested in the acquisition third language (L3) phonetics and phonology.
+
+### Manuscripts under review
+
+**Parrish, K.** (under review). The Impact of Phonological Short Term Memory on        Cross-linguistic Influence in L3 Voice-onset. DOI: 10.13140/RG.2.2.17665.99689
+
+**Parrish, K.** (under review). The Production of L3 French stop-initial words by     Spanish/English bilinguals.
+
+Casillas, J.V., **Parrish, K.**, Garrido Pozú, J., Rodríguez, N., Fernández Arroyo,    L., Esposito, R., Chang, I, Gómez, K., Constantin-Dureci, G., Shao, J., Andreu   Rascón, I. and Taveras, K. (under review) Using Intonation to Disambiguate
+  Meaning: The Role of Empathy and Proficiency in L2 Perceptual Development.
+
+#### Manuscripts in progress
+
+Parrish, K. (under review). The Categorization of L3 vowels at first exposure by Spanish/English bilinguals.
+
+Garrido-Pozú, J. J. and Parrish, K. (in preparation ). The effects of lexical     frequency on vowel duration in Spanish monolinguals
+
+Parrish, K. and Rodríguez, N. (in preparation ). An open Corpus of L3 speech.
+
+\endgroup

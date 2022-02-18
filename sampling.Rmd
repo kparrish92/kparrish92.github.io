@@ -1,0 +1,10 @@
+---
+title: Sampling App 
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+This is an application I made to visualize sampling error. 
+
+<meta http-equiv="refresh" content="0; url='https://kparrish92.shinyapps.io/shiny_scatter_sampling/'"/>

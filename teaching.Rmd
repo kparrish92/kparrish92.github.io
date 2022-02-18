@@ -1,0 +1,75 @@
+---
+title: "Teaching"
+image: "img/kp.jpg"
+output:
+  postcards::trestles
+---
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+
+```{r, printing-fuctions, echo=F}
+wrap_li <- function(text = "text", fa = "fas fa-graduation-cap") {
+  li <- paste0("<li><i class='fa-li ", fa, "'></i>", text, "</li>\n")
+  return(li)
+}
+print_list <- function(text = "text", fa = "fas fa-graduation-cap") {
+  open_ul  <- "<ul class='ul-edu fa-ul'>"
+  close_ul <- "</ul>"
+  items    <- wrap_li(text, fa)
+  cat(paste0(open_ul, "\n"), items, paste0("\n", close_ul))
+}
+```
+
+### Teaching Philosophy
+
+<p align="justify">
+I see the classroom as a **safe space** and **student centered**.
+Essentially, I see teaching as a reinforcement of these two principles; making the classroom a safe and inclusive place for people (people in the broadest sense of the word) and also a place where the student feels in control of their education.
+
+I've been fortunate enough to have tutored undergraduate students in Spanish and German language at the University Center for Academic Excellence at the University of North Carolina at Charlotte.
+Following this, I became a graduate teaching assistant during my Masters degree at the same institution, where I came to very much enjoy sharing my passion for languages with first and second year students as I taught first and second semester Spanish courses in a hybrid format (before covid made these cool).
+After graduating with my Masters, I became a full time college instructor as a fellow in which I taught in both full time and hybrid contexts.
+
+
+
+
+</p>
+
+
+<br>
+
+:::: {style="display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 10px;"}
+
+::: {}
+
+##### Courses Taught
+
+```{r, echo=F, results='asis'}
+ul <- "- "
+elements <- c(
+ "Spanish 101 - Face to Face",
+ "Spanish 102 - Face to Face",
+ "Spanish 101 - Hybrid",
+ "Spanish 102 - Hybrid",
+ "Spanish 101 - Online"
+)
+glue::glue("{ul}{elements}")
+```
+
+:::
+
+::: {}
+
+##### Positions Held
+
+```{r, print-ed, echo=F, results='asis'}
+print_list(
+  text = c(
+  "Teaching Assistant, 2019-Current <br>Rutgers University", 
+  "Masters Teaching Fellow , 2018 <br>The University of North Carolina at Charlotte", 
+  "Teaching Assistant, 2017 <br>he University of North Carolina at Charlotte"))
+```
+
+:::
+
+::::

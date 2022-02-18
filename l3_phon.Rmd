@@ -1,0 +1,19 @@
+---
+title: "Linear Regression"
+output:
+  distill::distill_article:
+    self_contained: TRUE
+---
+
+```{css echo=FALSE}
+d-title h1 {
+  font-size: 0px;
+}
+```
+
+
+```{r, echo = TRUE}
+
+rnorm(10, 0, 1)
+
+```
