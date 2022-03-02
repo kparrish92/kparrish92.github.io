@@ -23,6 +23,9 @@ navbar:
           href: code.html
         - text: "Sampling App"
           href: sampling.html
+        - text: "Vowel Formant App"
+          href: formant_app.html
+          
 
 
 output: distill::distill_article

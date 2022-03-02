@@ -45,6 +45,7 @@ print_list <- function(text = "text", fa = "fas fa-graduation-cap") {
 
 <p align="justify">
 I am a PhD Candidate in the Second Language Acquisition and Bilingualism program working with [Professor Joseph V. Casillas](https://www.jvcasillas.com/about.html). in the Spanish and Portuguese Department at Rutgers University, New Brunswick. 
+I am also a current member of the [Rutgers Applied Phonetics](https://www.rap-group.jvcasillas.com) group working with Professor Casillas and other colleagues at Rutgers.
 My main interests are in third language acquisition, phonetics and phonology, and language pedagogy. 
 My primary aim/interest is how bilinguals acquire the phonetics and phonology of a third language.
 In particular, my research involves Spanish-English bilinguals and their learning of a new language with a focus on near first exposure.

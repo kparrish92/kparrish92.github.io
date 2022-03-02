@@ -1,0 +1,9 @@
+---
+title: Formant App (Similated data based on Bradlow (1995))
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+<meta http-equiv="refresh" content="0; url='https://kparrish92.shinyapps.io/formant_app/'"/>
