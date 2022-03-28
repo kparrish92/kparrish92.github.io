@@ -25,9 +25,18 @@ print_list <- function(text = "text", fa = "fas fa-graduation-cap") {
 
 ### Manuscripts under review
 
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+\phantom{.} 
+\textcolor{white}{\\} 
+\vspace{-0.5in}
+
 **Parrish, K.** (under review). The Impact of Phonological Short Term Memory on Cross-linguistic Influence in L3 Voice-onset Time.
 
 Casillas, J.V., Garrido Pozú, J., **Parrish, K.**, Rodríguez, N., Fernández Arroyo,    L., Esposito, R., Chang, I, Gómez, K., Constantin-Dureci, G., Shao, J., Andreu   Rascón, I. and Taveras, K. (under review) Using Intonation to Disambiguate Meaning: The Role of Empathy and Proficiency in L2 Perceptual Development. [Pre-print](https://psyarxiv.com/e5vk2/)
+
+\endgroup
 
 ### Manuscripts in progress
 

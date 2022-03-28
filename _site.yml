@@ -1,6 +1,6 @@
 name: "kparrish_website"
 title: "Kyle Parrish personal website"
-theme: assets/theme.css
+theme: styles.css
 description: |
   Kyle Parrish personal website
 collections:
@@ -26,6 +26,4 @@ navbar:
         - text: "Vowel Formant App"
           href: formant_app.html
           
-
-
 output: distill::distill_article

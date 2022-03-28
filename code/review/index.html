@@ -2132,61 +2132,111 @@ d-appendix {
 /*-- Additional custom styles --*/
 /* Add any additional CSS rules below                      */
 </style>
-<style type="text/css">/* base variables */
-
-/* Edit the CSS properties in this file to create a custom
-   Distill theme. Only edit values in the right column
-   for each row; values shown are the CSS defaults.
-   To return any property to the default,
-   you may set its value to: unset
-   All rows must end with a semi-colon.                      */
-
-/* Optional: embed custom fonts here with `@import`          */
-/* This must remain at the top of this file.                 */
-@import url('https://fonts.googleapis.com/css2?family=Amiri');
-@import url('https://fonts.googleapis.com/css2?family=Bitter');
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono');
-
-html {
-  /*-- Main font sizes --*/
-  --title-size:      50px;
-  --body-size:       1.06rem;
-  --code-size:       14px;
-  --aside-size:      12px;
-  --fig-cap-size:    13px;
-  /*-- Main font colors --*/
-  --title-color:     #000000;
-  --header-color:    #000000;
-  --body-color:      #000000;
-  --aside-color:     #000000;
-  --fig-cap-color:   #000000;
-  /*-- Specify custom fonts ~~~ must be imported above   --*/
-  --heading-font:    "Times New Roman", serif;
-  --mono-font:       "DM Mono", monospace;
-  --body-font:       "Bitter", sans-serif;
-  --navbar-font:     "Amiri", serif;
-}
-
-/* More properties ... */
-
-body {background-color: #bbbebf;}
-
-.nav-dropdown-content {
-  color: #ffffff;
-  background-color: #ffffff;
-}
-
-.distill-site-nav {
+<style type="text/css">.distill-site-nav {
   color: white;
   background-color: #5f6a72;
   font-size: 18px;
   font-weight: 300;
 }
 
+.distill-site-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.distill-site-nav a:hover {
+  color: #cc0033;
+}
+
 .distill-site-header {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 2px;
+}
+
+.distill-site-footer {
+  background-color: white;
+  padding: 0;
+  color: black;
+}
+
+.distill-site-footer a {
+  color: black;
+  text-decoration: none;
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}
+
+
+/*My additions*/
+
+.nav-dropdown {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-dropdown a:hover {
+  color: #cc0033;
+}
+
+.nav-dropdown-content {
+  color: #5f6a72;
+  background-color: #5f6a72;
+}
+
+.nav-dropdown-content a:hover {
+  color: #cc0033;
+  background-color: #5f6a72;
+}
+
+.distill-site-header .logo img {
+  display: inline-block;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  max-height: 41px;
+  width: auto;
+  margin-bottom: 5px;
+  padding-right: 5px;
+  vertical-align: bottom;
+}
+
+
+
+/*
+.logo {
+  display: inline-block;
+  width: 120px;
+  height: 46px;
+  background-image:url(./images/ru.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+}
+*/
+
+/*ru_colors <- c('RUred' =  '#cc0033',*/
+               /*'RUgrey' = '#5f6a72',*/
+               /*'RUblack' = '#000000')*/
+
+
+
+
+/* image zoom */
+.zoom {
+  border: none;
+  margin: 0 auto;
+  transition: all .4s ease-in-out;
+}
+.zoom:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }</style>
 <style type="text/css">
 /* base style */
