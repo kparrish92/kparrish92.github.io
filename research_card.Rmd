@@ -20,7 +20,7 @@ print_list <- function(text = "text", fa = "fas fa-graduation-cap") {
 
 ### Publications
 
-**Parrish, K.** (accepted). The Production of L3 French stop-initial words by Spanish/English bilinguals. *The International Journal of Multilingualism*. [Pre-print](https://doi.org/10.13140/RG.2.2.17665.99689)
+**Parrish, K.** (2022). The Production of L3 French stop-initial words by Spanish/English bilinguals. *The International Journal of Multilingualism*. [DOI](https://doi.org/10.1080/14790718.2022.2060234)
 
 ### Manuscripts under review
 
