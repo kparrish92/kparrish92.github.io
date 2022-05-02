@@ -5,7 +5,6 @@ output:
   postcards::trestles
 ---
 
-
 ```{r, printing-fuctions, echo=F}
 wrap_li <- function(text = "text", fa = "fas fa-graduation-cap") {
   li <- paste0("<li><i class='fa-li ", fa, "'></i>", text, "</li>\n")
@@ -29,14 +28,15 @@ print_list <- function(text = "text", fa = "fas fa-graduation-cap") {
 
 Casillas, J.V., Garrido Pozú, J., **Parrish, K.**, Rodríguez, N., Fernández Arroyo,    L., Esposito, R., Chang, I, Gómez, K., Constantin-Dureci, G., Shao, J., Andreu   Rascón, I. and Taveras, K. (under review) Using Intonation to Disambiguate Meaning: The Role of Empathy and Proficiency in L2 Perceptual Development. [Pre-print](https://psyarxiv.com/e5vk2/)
 
+**Parrish, K.** (submitted). The Categorization of L3 vowels at first exposure by Spanish-English bilinguals.
 
 ### Manuscripts in progress
 
-**Parrish, K.** (in preparation). The Categorization of L3 vowels at first exposure by Spanish/English bilinguals.
+**Parrish, K.** (in progress) A replication of Rothman (2011): Reexamining the Typological Primacy Model.
+
+**Parrish, K.** (in progress) The impact of empathy and openness on accentedness ratings in L2 Spanish. 
 
 Garrido-Pozú, J. J. and **Parrish, K.** (in preparation). The effects of lexical  frequency on vowel duration in Spanish monolinguals
-
-**Parrish, K.,** and Rodríguez, N. (in preparation ). An open Corpus of L3 speech.
 
 ### Conference Presentations
 
