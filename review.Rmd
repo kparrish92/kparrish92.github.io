@@ -6,8 +6,7 @@ title: "Systematic Review (Rothman et al., 2019)"
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-
-There were two systematic reviews done by Rothman and colleagues. The first was done in 2018, but officially published in 2020 ([(Puig-Mayenco et al. , 2020)](https://doi.org/10.1177/0267658318809147).
+[Rothman et al. (2019)](https://doi.org/10.1017/9781316014660) was a synthesis of 
 The information coded here contains information from updated systematic review coded from the appendix reported in [Rothman et al. (2019)](https://doi.org/10.1017/9781316014660).
 
 ```{r, include = FALSE}
