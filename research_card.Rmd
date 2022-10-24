@@ -20,21 +20,19 @@ print_list <- function(text = "text", fa = "fas fa-graduation-cap") {
 
 ### Publications
 
+**Parrish, K.** (2022). The Categorization of L3 vowels at first exposure by Spanish-English bilinguals. *Languages*. [DOI](https://doi.org/10.3390/languages7030226)
+
 **Parrish, K.** (2022). The Production of L3 French stop-initial words by Spanish/English bilinguals. *The International Journal of Multilingualism*. [DOI](https://doi.org/10.1080/14790718.2022.2060234)
 
 ### Manuscripts under review
 
 **Parrish, K.** (Registered report under review). The Impact of Phonological Short Term Memory on Cross-linguistic Influence in L3 Voice-onset Time.
 
-Casillas, J.V., Garrido Pozú, J., **Parrish, K.**, Rodríguez, N., Fernández Arroyo,    L., Esposito, R., Chang, I, Gómez, K., Constantin-Dureci, G., Shao, J., Andreu   Rascón, I. and Taveras, K. (under review) Using Intonation to Disambiguate Meaning: The Role of Empathy and Proficiency in L2 Perceptual Development. [Pre-print](https://psyarxiv.com/e5vk2/)
-
-**Parrish, K.** (submitted). The Categorization of L3 vowels at first exposure by Spanish-English bilinguals.
+Casillas, J.V., Garrido Pozú, J., **Parrish, K.**, Rodríguez, N., Fernández Arroyo, L., Esposito, R., Chang, I, Gómez, K., Constantin-Dureci, G., Shao, J., Andreu   Rascón, I. and Taveras, K. (under review) Using Intonation to Disambiguate Meaning: The Role of Empathy and Proficiency in L2 Perceptual Development. [Pre-print](https://psyarxiv.com/e5vk2/)
 
 ### Manuscripts in progress
 
 **Parrish, K.** (in progress) A replication of Rothman (2011): Reexamining the Typological Primacy Model.
-
-**Parrish, K.** (in progress) The impact of empathy and openness on accentedness ratings in L2 Spanish. 
 
 Garrido-Pozú, J. J. and **Parrish, K.** (in preparation). The effects of lexical  frequency on vowel duration in Spanish monolinguals
 
