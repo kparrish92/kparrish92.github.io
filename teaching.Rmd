@@ -1,6 +1,6 @@
 ---
 title: "Teaching"
-image: "img/kp.jpg"
+image: "img/kp_2.JPG"
 output:
   postcards::trestles
 ---
@@ -31,7 +31,7 @@ Following this, I became a graduate teaching assistant during my Masters degree 
 After graduating with my Masters, I became a full time college instructor as a fellow in which I taught in both full time and hybrid contexts.
 I was able to continue teaching during my doctoral studies at Rutgers University, where I taught a variety of in-person and online courses. 
 Additionally, I taught Spanish courses as an Adjunct Faculty member at Mercer County Community College during my PhD.
-
+These days, I have the good fortune to teach courses in Hispanic linguistics at Goethe University in three languages! I teach intro to Syntax in German, Phonetics in Spanish, and several courses in English. 
 
 </p>
 
@@ -47,11 +47,11 @@ Additionally, I taught Spanish courses as an Adjunct Faculty member at Mercer Co
 ```{r, echo=F, results='asis'}
 ul <- "- "
 elements <- c(
- "Spanish 101 - Face to Face",
- "Spanish 102 - Face to Face",
- "Spanish 101 - Hybrid",
- "Spanish 102 - Hybrid",
- "Spanish 101 - Online"
+ "Introduction to Spanish Syntax (in German)",
+ "MA course - L3 acquistion of Romance Languages (in English)",
+ "Introduction to Spanish Phonetics and Phonology (in Spanish)",
+ "Statistics for Linguists (in English)",
+ "Spanish Language courses"
 )
 glue::glue("{ul}{elements}")
 ```
@@ -65,8 +65,9 @@ glue::glue("{ul}{elements}")
 ```{r, print-ed, echo=F, results='asis'}
 print_list(
   text = c(
-  "Adjunct Faculty, 2022-Current <br>Mercer County Community College", 
-  "Teaching Assistant, 2019-Current <br>Rutgers University", 
+  "Postdoctoral Researcher, 2023-Current <br>Goethe University Frankfurt", 
+  "Adjunct Faculty, 2022-2023 <br>Mercer County Community College", 
+  "Teaching Assistant, 2019-2023 <br>Rutgers University", 
   "Masters Teaching Fellow, 2018 <br>The University of North Carolina at Charlotte", 
   "Teaching Assistant, 2017 <br>he University of North Carolina at Charlotte"))
 ```

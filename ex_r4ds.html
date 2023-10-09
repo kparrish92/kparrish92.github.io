@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -87,20 +88,20 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Kyle Parrish personal website: Untitled</title>
+  <title>Kyle Parrish: Untitled</title>
 
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Kyle Parrish personal website: Untitled"/>
+  <meta property="og:title" content="Kyle Parrish: Untitled"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Kyle Parrish personal website"/>
+  <meta property="og:site_name" content="Kyle Parrish"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Kyle Parrish personal website: Untitled"/>
+  <meta property="twitter:title" content="Kyle Parrish: Untitled"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
@@ -454,8 +455,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
 
   <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
   <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
   <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
@@ -784,6 +785,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -824,9 +826,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     display: none !important;
   }
 
+  hr.section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0px;
+  }
+
+
+  d-byline {
+    border-top: none;
+  }
+
   d-article {
     padding-top: 2.5rem;
     padding-bottom: 30px;
+    border-top: none;
   }
 
   d-appendix {
@@ -921,6 +935,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article div.sourceCode pre {
     padding-left: 18px;
     font-size: 14px;
+  }
+
+  /* tweak for Pandoc numbered line within distill */
+  d-article pre.numberSource code > span {
+      left: -2em;
   }
 
   d-article pre {
@@ -1025,10 +1044,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1686,6 +1701,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // create d-title
     $('.d-title').changeElementType('d-title');
 
+    // separator
+    var separator = '<hr class="section-separator" style="clear: both"/>';
+    // prepend separator above appendix
+    $('.d-byline').before(separator);
+    $('.d-article').before(separator);
+
     // create d-byline
     var byline = $('<d-byline></d-byline>');
     $('.d-byline').replaceWith(byline);
@@ -1763,8 +1784,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     $('.distill-force-highlighting-css').parent().remove();
 
     // remove empty line numbers inserted by pandoc when using a
-    // custom syntax highlighting theme
-    $('code.sourceCode a:empty').remove();
+    // custom syntax highlighting theme, except when numbering line
+    // in code chunk
+    $('pre:not(.numberLines) code.sourceCode a:empty').remove();
 
     // load distill framework
     load_distill_framework();
@@ -1790,12 +1812,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       // add orcid ids
       $('.authors-affiliations').find('.author').each(function(i, el) {
         var orcid_id = front_matter.authors[i].orcidID;
+        var author_name = front_matter.authors[i].author
         if (orcid_id) {
           var a = $('<a></a>');
           a.attr('href', 'https://orcid.org/' + orcid_id);
           var img = $('<img></img>');
           img.addClass('orcid-id');
-          img.attr('alt', 'ORCID ID');
+          img.attr('alt', author_name ? 'ORCID ID for ' + author_name : 'ORCID ID');
           img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
           a.append(img);
           $(this).append(a);
@@ -1860,9 +1883,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1874,6 +1909,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1973,6 +2033,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1995,7 +2057,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -2372,7 +2434,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.22/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2400,11 +2462,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a href="index.html" class="title">Kyle Parrish personal website</a>
+<a href="index.html" class="title">Kyle Parrish</a>
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
-<a href="index.html">Home</a>
+<a href="about.html">Home</a>
 <a href="research_card.html">Research</a>
 <a href="teaching.html">Teaching</a>
 <div class="nav-dropdown">
@@ -2429,6 +2491,7 @@ Apps and more
 
 <div class="d-title">
 <h1>ex_r4ds.knit</h1>
+
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2437,187 +2500,147 @@ Apps and more
 
 <div class="d-article">
 <h1 id="workflow-basics">Workflow: basics</h1>
-<p>You now have some experience running R code. We didn’t give you many
-details, but you’ve obviously figured out the basics, or you would’ve
-thrown this book away in frustration! Frustration is natural when you
-start programming in R, because it is such a stickler for punctuation,
-and even one character out of place will cause it to complain. But while
-you should expect to be a little frustrated, take comfort in that it’s
-both typical and temporary: it happens to everyone, and the only way to
-get over it is to keep trying.</p>
-<p>Before we go any further, let’s make sure you’ve got a solid
-foundation in running R code, and that you know about some of the most
-helpful RStudio features.</p>
+<p>You now have some experience running R code.
+We didn’t give you many details, but you’ve obviously figured out the basics, or you would’ve thrown this book away in frustration!
+Frustration is natural when you start programming in R, because it is such a stickler for punctuation, and even one character out of place will cause it to complain.
+But while you should expect to be a little frustrated, take comfort in that it’s both typical and temporary: it happens to everyone, and the only way to get over it is to keep trying.</p>
+<p>Before we go any further, let’s make sure you’ve got a solid foundation in running R code, and that you know about some of the most helpful RStudio features.</p>
 <h2 id="coding-basics">Coding basics</h2>
-<p>Let’s review some basics we’ve so far omitted in the interests of
-getting you plotting as quickly as possible. You can use R as a
-calculator:</p>
+<p>Let’s review some basics we’ve so far omitted in the interests of getting you plotting as quickly as possible.
+You can use R as a calculator:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fl'>1</span> <span class='op'>/</span> <span class='fl'>200</span> <span class='op'>*</span> <span class='fl'>30</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fl'>1</span> <span class='op'>/</span> <span class='fl'>200</span> <span class='op'>*</span> <span class='fl'>30</span></span></code></pre>
 </div>
 <pre><code>[1] 0.15</code></pre>
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='op'>(</span><span class='fl'>59</span> <span class='op'>+</span> <span class='fl'>73</span> <span class='op'>+</span> <span class='fl'>2</span><span class='op'>)</span> <span class='op'>/</span> <span class='fl'>3</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='op'>(</span><span class='fl'>59</span> <span class='op'>+</span> <span class='fl'>73</span> <span class='op'>+</span> <span class='fl'>2</span><span class='op'>)</span> <span class='op'>/</span> <span class='fl'>3</span></span></code></pre>
 </div>
 <pre><code>[1] 44.66667</code></pre>
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/base/Trig.html'>sin</a></span><span class='op'>(</span><span class='va'>pi</span> <span class='op'>/</span> <span class='fl'>2</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://rdrr.io/r/base/Trig.html'>sin</a></span><span class='op'>(</span><span class='va'>pi</span> <span class='op'>/</span> <span class='fl'>2</span><span class='op'>)</span></span></code></pre>
 </div>
 <pre><code>[1] 1</code></pre>
 </div>
 <p>You can create new objects with <code>&lt;-</code>:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>x</span> <span class='op'>&lt;-</span> <span class='fl'>3</span> <span class='op'>*</span> <span class='fl'>4</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>x</span> <span class='op'>&lt;-</span> <span class='fl'>3</span> <span class='op'>*</span> <span class='fl'>4</span></span></code></pre>
 </div>
 </div>
-<p>All R statements where you create objects,
-<strong>assignment</strong> statements, have the same form:</p>
+<p>All R statements where you create objects, <strong>assignment</strong> statements, have the same form:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>object_name</span> <span class='op'>&lt;-</span> <span class='va'>value</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>object_name</span> <span class='op'>&lt;-</span> <span class='va'>value</span></span></code></pre>
 </div>
 </div>
 <p>When reading that code say “object name gets value” in your head.</p>
-<p>You will make lots of assignments and <code>&lt;-</code> is a pain to
-type. Don’t be lazy and use <code>=</code>: it will work, but it will
-cause confusion later. Instead, use RStudio’s keyboard shortcut: Alt + -
-(the minus sign). Notice that RStudio automagically surrounds
-<code>&lt;-</code> with spaces, which is a good code formatting
-practice. Code is miserable to read on a good day, so giveyoureyesabreak
-and use spaces.</p>
+<p>You will make lots of assignments and <code>&lt;-</code> is a pain to type.
+Don’t be lazy and use <code>=</code>: it will work, but it will cause confusion later.
+Instead, use RStudio’s keyboard shortcut: Alt + - (the minus sign).
+Notice that RStudio automagically surrounds <code>&lt;-</code> with spaces, which is a good code formatting practice.
+Code is miserable to read on a good day, so giveyoureyesabreak and use spaces.</p>
 <h2 id="whats-in-a-name">What’s in a name?</h2>
-<p>Object names must start with a letter, and can only contain letters,
-numbers, <code>_</code> and <code>.</code>. You want your object names
-to be descriptive, so you’ll need a convention for multiple words. We
-recommend <strong>snake_case</strong> where you separate lowercase words
-with <code>_</code>.</p>
+<p>Object names must start with a letter, and can only contain letters, numbers, <code>_</code> and <code>.</code>.
+You want your object names to be descriptive, so you’ll need a convention for multiple words.
+We recommend <strong>snake_case</strong> where you separate lowercase words with <code>_</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>i_use_snake_case</span>
-<span class='va'>otherPeopleUseCamelCase</span>
-<span class='va'>some.people.use.periods</span>
-<span class='va'>And_aFew.People_RENOUNCEconvention</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>i_use_snake_case</span></span>
+<span><span class='va'>otherPeopleUseCamelCase</span></span>
+<span><span class='va'>some.people.use.periods</span></span>
+<span><span class='va'>And_aFew.People_RENOUNCEconvention</span></span></code></pre>
 </div>
 </div>
-<p>We’ll come back to code style later, in Chapter <a href="#functions"><strong>??</strong></a> on
-functions. If you’re interested in learning more about about best
-practices for code style, I also recommend The tidyverse style guide: <a
-href="https://style.tidyverse.org/">https://style.tidyverse.org</a>.</p>
+<p>We’ll come back to code style later, in Chapter <a href="#functions"><strong>??</strong></a> on functions.
+If you’re interested in learning more about about best practices for code style, I also recommend The tidyverse style guide: <a href="https://style.tidyverse.org/">https://style.tidyverse.org</a>.</p>
 <p>You can inspect an object by typing its name:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>x</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>x</span></span></code></pre>
 </div>
 <pre><code>[1] 12</code></pre>
 </div>
 <p>Make another assignment:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>this_is_a_really_long_name</span> <span class='op'>&lt;-</span> <span class='fl'>2.5</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>this_is_a_really_long_name</span> <span class='op'>&lt;-</span> <span class='fl'>2.5</span></span></code></pre>
 </div>
 </div>
-<p>To inspect this object, try out RStudio’s completion facility: type
-“this”, press TAB, add characters until you have a unique prefix, then
-press return.</p>
-<p>Ooops, you made a mistake! <code>this_is_a_really_long_name</code>
-should have value 3.5 not 2.5. Use another keyboard shortcut to help you
-fix it. Type “this” then press Cmd/Ctrl + ↑. That will list all the
-commands you’ve typed that start those letters. Use the arrow keys to
-navigate, then press enter to retype the command. Change 2.5 to 3.5 and
-rerun.</p>
+<p>To inspect this object, try out RStudio’s completion facility: type “this”, press TAB, add characters until you have a unique prefix, then press return.</p>
+<p>Ooops, you made a mistake!
+<code>this_is_a_really_long_name</code> should have value 3.5 not 2.5.
+Use another keyboard shortcut to help you fix it.
+Type “this” then press Cmd/Ctrl + ↑.
+That will list all the commands you’ve typed that start those letters.
+Use the arrow keys to navigate, then press enter to retype the command.
+Change 2.5 to 3.5 and rerun.</p>
 <p>Make yet another assignment:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>r_rocks</span> <span class='op'>&lt;-</span> <span class='fl'>2</span> <span class='op'>^</span> <span class='fl'>3</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>r_rocks</span> <span class='op'>&lt;-</span> <span class='fl'>2</span> <span class='op'>^</span> <span class='fl'>3</span></span></code></pre>
 </div>
 </div>
 <p>Let’s try to inspect it:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>r_rock</span>
-<span class='co'>#&gt; Error: object 'r_rock' not found</span>
-<span class='va'>R_rocks</span>
-<span class='co'>#&gt; Error: object 'R_rocks' not found</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>r_rock</span></span>
+<span><span class='co'>#&gt; Error: object 'r_rock' not found</span></span>
+<span><span class='va'>R_rocks</span></span>
+<span><span class='co'>#&gt; Error: object 'R_rocks' not found</span></span></code></pre>
 </div>
 </div>
-<p>There’s an implied contract between you and R: it will do the tedious
-computation for you, but in return, you must be completely precise in
-your instructions. Typos matter. Case matters.</p>
+<p>There’s an implied contract between you and R: it will do the tedious computation for you, but in return, you must be completely precise in your instructions.
+Typos matter.
+Case matters.</p>
 <h2 id="calling-functions">Calling functions</h2>
-<p>R has a large collection of built-in functions that are called like
-this:</p>
+<p>R has a large collection of built-in functions that are called like this:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>function_name</span><span class='op'>(</span>arg1 <span class='op'>=</span> <span class='va'>val1</span>, arg2 <span class='op'>=</span> <span class='va'>val2</span>, <span class='va'>...</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'>function_name</span><span class='op'>(</span>arg1 <span class='op'>=</span> <span class='va'>val1</span>, arg2 <span class='op'>=</span> <span class='va'>val2</span>, <span class='va'>...</span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
-<p>Let’s try using <code>seq()</code> which makes regular
-<strong>seq</strong>uences of numbers and, while we’re at it, learn more
-helpful features of RStudio. Type <code>se</code> and hit TAB. A popup
-shows you possible completions. Specify <code>seq()</code> by typing
-more (a <code>q</code>) to disambiguate, or by using ↑/↓ arrows to
-select. Notice the floating tooltip that pops up, reminding you of the
-function’s arguments and purpose. If you want more help, press F1 to get
-all the details in the help tab in the lower right pane.</p>
+<p>Let’s try using <code>seq()</code> which makes regular <strong>seq</strong>uences of numbers and, while we’re at it, learn more helpful features of RStudio.
+Type <code>se</code> and hit TAB.
+A popup shows you possible completions.
+Specify <code>seq()</code> by typing more (a <code>q</code>) to disambiguate, or by using ↑/↓ arrows to select.
+Notice the floating tooltip that pops up, reminding you of the function’s arguments and purpose.
+If you want more help, press F1 to get all the details in the help tab in the lower right pane.</p>
 <p>Press TAB once more when you’ve selected the function you want.
-RStudio will add matching opening (<code>(</code>) and closing
-(<code>)</code>) parentheses for you. Type the arguments
-<code>1, 10</code> and hit return.</p>
+RStudio will add matching opening (<code>(</code>) and closing (<code>)</code>) parentheses for you.
+Type the arguments <code>1, 10</code> and hit return.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span><span class='op'>(</span><span class='fl'>1</span>, <span class='fl'>10</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span><span class='op'>(</span><span class='fl'>1</span>, <span class='fl'>10</span><span class='op'>)</span></span></code></pre>
 </div>
 <pre><code> [1]  1  2  3  4  5  6  7  8  9 10</code></pre>
 </div>
-<p>Type this code and notice you get similar assistance with the paired
-quotation marks:</p>
+<p>Type this code and notice you get similar assistance with the paired quotation marks:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>x</span> <span class='op'>&lt;-</span> <span class='st'>"hello world"</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>x</span> <span class='op'>&lt;-</span> <span class='st'>"hello world"</span></span></code></pre>
 </div>
 </div>
-<p>Quotation marks and parentheses must always come in a pair. RStudio
-does its best to help you, but it’s still possible to mess up and end up
-with a mismatch. If this happens, R will show you the continuation
-character “+”:</p>
+<p>Quotation marks and parentheses must always come in a pair.
+RStudio does its best to help you, but it’s still possible to mess up and end up with a mismatch.
+If this happens, R will show you the continuation character “+”:</p>
 <pre><code>&gt; x &lt;- &quot;hello
 +</code></pre>
-<p>The <code>+</code> tells you that R is waiting for more input; it
-doesn’t think you’re done yet. Usually that means you’ve forgotten
-either a <code>"</code> or a <code>)</code>. Either add the missing
-pair, or press ESCAPE to abort the expression and try again.</p>
-<p>If you make an assignment, you don’t get to see the value. You’re
-then tempted to immediately double-check the result:</p>
+<p>The <code>+</code> tells you that R is waiting for more input; it doesn’t think you’re done yet.
+Usually that means you’ve forgotten either a <code>"</code> or a <code>)</code>. Either add the missing pair, or press ESCAPE to abort the expression and try again.</p>
+<p>If you make an assignment, you don’t get to see the value.
+You’re then tempted to immediately double-check the result:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>y</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span><span class='op'>(</span><span class='fl'>1</span>, <span class='fl'>10</span>, length.out <span class='op'>=</span> <span class='fl'>5</span><span class='op'>)</span>
-<span class='va'>y</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>y</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span><span class='op'>(</span><span class='fl'>1</span>, <span class='fl'>10</span>, length.out <span class='op'>=</span> <span class='fl'>5</span><span class='op'>)</span></span>
+<span><span class='va'>y</span></span></code></pre>
 </div>
 <pre><code>[1]  1.00  3.25  5.50  7.75 10.00</code></pre>
 </div>
-<p>This common action can be shortened by surrounding the assignment
-with parentheses, which causes assignment and “print to screen” to
-happen.</p>
+<p>This common action can be shortened by surrounding the assignment with parentheses, which causes assignment and “print to screen” to happen.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='op'>(</span><span class='va'>y</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span><span class='op'>(</span><span class='fl'>1</span>, <span class='fl'>10</span>, length.out <span class='op'>=</span> <span class='fl'>5</span><span class='op'>)</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='op'>(</span><span class='va'>y</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span><span class='op'>(</span><span class='fl'>1</span>, <span class='fl'>10</span>, length.out <span class='op'>=</span> <span class='fl'>5</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
 </div>
 <pre><code>[1]  1.00  3.25  5.50  7.75 10.00</code></pre>
 </div>
@@ -2628,30 +2651,26 @@ happen.</p>
 <li><p>Why does this code not work?</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>my_variable</span> <span class='op'>&lt;-</span> <span class='fl'>10</span>
-<span class='va'>my_varıable</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>my_variable</span> <span class='op'>&lt;-</span> <span class='fl'>10</span></span>
+<span><span class='va'>my_varıable</span></span></code></pre>
 </div>
 <pre><code>Error in eval(expr, envir, enclos): object &#39;my_varıable&#39; not found</code></pre>
 </div>
-<p>Look carefully! (This may seem like an exercise in pointlessness, but
-training your brain to notice even the tiniest difference will pay off
-when programming.)</p></li>
-<li><p>Tweak each of the following R commands so that they run
-correctly:</p>
+<p>Look carefully!
+(This may seem like an exercise in pointlessness, but training your brain to notice even the tiniest difference will pay off when programming.)</p></li>
+<li><p>Tweak each of the following R commands so that they run correctly:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>libary</span><span class='op'>(</span><span class='va'>tidyverse</span><span class='op'>)</span>
-<span class='fu'>ggplot</span><span class='op'>(</span>dota <span class='op'>=</span> <span class='va'>mpg</span><span class='op'>)</span> <span class='op'>+</span> 
-  <span class='fu'>geom_point</span><span class='op'>(</span>maping <span class='op'>=</span> <span class='fu'>aes</span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>displ</span>, y <span class='op'>=</span> <span class='va'>hwy</span><span class='op'>)</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'>libary</span><span class='op'>(</span><span class='va'>tidyverse</span><span class='op'>)</span></span>
+<span><span class='fu'>ggplot</span><span class='op'>(</span>dota <span class='op'>=</span> <span class='va'>mpg</span><span class='op'>)</span> <span class='op'>+</span> </span>
+<span>  <span class='fu'>geom_point</span><span class='op'>(</span>maping <span class='op'>=</span> <span class='fu'>aes</span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>displ</span>, y <span class='op'>=</span> <span class='va'>hwy</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
 </div>
 </div></li>
-<li><p>Press Alt + Shift + K. What happens? How can you get to the same
-place using the menus?</p></li>
+<li><p>Press Alt + Shift + K.
+What happens?
+How can you get to the same place using the menus?</p></li>
 </ol>
-<div class="sourceCode" id="cb10"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

@@ -1,6 +1,6 @@
 ---
 title: "Research<br>"
-image: "img/kp.jpg"
+image: "img/kp_2.JPG"
 output:
   postcards::trestles
 ---
@@ -20,25 +20,25 @@ print_list <- function(text = "text", fa = "fas fa-graduation-cap") {
 
 ### Publications
 
+**Parrish, K** (2023). A Simulated Analysis of Repeated Measures in VOT: We need more tokens! *ICPhS 2023*. [link](https://guarant.cz/icphs2023/900.pdf)
+
+Casillas, J. V., Garrido-Pozú, J. J., **Parrish, K**., Arroyo, L. F., Rodríguez, N., Esposito, R., ... & Taveras, K. (2023). Using intonation to disambiguate meaning: The role of empathy and proficiency in L2 perceptual development. *Applied Psycholinguistics*. [DOI](https://doi.org/10.1017/S0142716423000310)
+
 **Parrish, K.** (2022). The Categorization of L3 vowels at first exposure by Spanish-English bilinguals. *Languages*. [DOI](https://doi.org/10.3390/languages7030226)
 
 **Parrish, K.** (2022). The Production of L3 French stop-initial words by Spanish/English bilinguals. *The International Journal of Multilingualism*. [DOI](https://doi.org/10.1080/14790718.2022.2060234)
 
 ### Manuscripts under review
 
-**Parrish, K.** (Registered report under review). The Impact of Phonological Short Term Memory on Cross-linguistic Influence in L3 Voice-onset Time.
-
-Casillas, J.V., Garrido Pozú, J., **Parrish, K.**, Rodríguez, N., Fernández Arroyo, L., Esposito, R., Chang, I, Gómez, K., Constantin-Dureci, G., Shao, J., Andreu   Rascón, I. and Taveras, K. (under review) Using Intonation to Disambiguate Meaning: The Role of Empathy and Proficiency in L2 Perceptual Development. [Pre-print](https://psyarxiv.com/e5vk2/)
+**Parrish, K.** (in progress) Statistical insignificance is not practical equivalence: A Conceptual Replication of Rothman (2011).
 
 ### Manuscripts in progress
-
-**Parrish, K.** (in progress) A replication of Rothman (2011): Reexamining the Typological Primacy Model.
 
 Garrido-Pozú, J. J. and **Parrish, K.** (in preparation). The effects of lexical  frequency on vowel duration in Spanish monolinguals
 
 ### Conference Presentations
 
-**Parrish, K,**. (2022). The Categorization of L3 French sounds at first exposure by Spanish-English bilinguals. The 10th International Symposium on the Acquisition of Second Language Speech. University of Barcelona. [Slides](https://kparrish92.github.io/new_sounds/docs/slides/new_sound.html#1)
+**Parrish, K,**. (2022). The Categorization of L3 French sounds at first exposure by Spanish-English bilinguals. The 10th International Symposium on the Acquisition of Second Language Speech. University of Barcelona. 
 
 Rodríguez, N., **Parrish, K.**, and Garrido Pozu, J. (2022). The Effect of Lexical Frequency on Word Duration: analyzing corpus data in Spanish and English. The 10th International Symposium on the Acquisition of Second Language Speech. University of Barcelona. [Slides](https://kparrish92.github.io/frequency_duration_spmonolinguals/slides/new_sounds.html#1)
 
