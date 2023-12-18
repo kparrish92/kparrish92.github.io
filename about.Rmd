@@ -34,7 +34,7 @@ print_list <- function(text = "text", fa = "fas fa-graduation-cap") {
 <p align="justify">
 I am a Postdoctoral Researcher at Goethe University Frankfurt in the Institute for Romance Languages and Literatures. I hold a PhD in Second Language Acquisition and Bilingualism from the Department of Spanish and Portuguese at Rutgers University.
 My main interests are in third language acquisition, quantitative methods, phonetics and phonology, and language pedagogy. 
-My primary aim/interest is how bilinguals acquire the phonetics and phonology of a third language.
+The primary aim of my research is to investigate how Spanish-English bilinguals acquire the phonetics and phonology of a third language.
 Additionally, I am interested in how the statistical tools that we use in research relate to our narrative conclusions.
 My recent projects have involved novel-language production by bilinguals, perception in the same population, and exploratory analysis related to which factors might be associated with the variation observed in cross-linguistic influence from either a first or second language in third language learning,
 and simulation studies examining repeated measures in phonetics.
@@ -53,12 +53,11 @@ Outside of work and school, I love dogs, American football (go Panthers!) and la
 ```{r, echo=F, results='asis'}
 ul <- "- "
 elements <- c(
- "Third Language acquisition",
- "Quantitative methods",
+ "Hispanic Linguistics",
+ "Second and Third Language acquisition",
  "Phonetics/Phonology",
  "Second language acquisition",
- "Bilingualism",
- "Statistics/Data visualization"
+ "Statistics and Data visualization"
 )
 glue::glue("{ul}{elements}")
 ```
@@ -74,7 +73,7 @@ print_list(
   text = c(
   "PhD in Second Language Acquisition and Bilingualism, 2023 <br>Rutgers University", 
   "MA in Spanish, 2018 <br>The University of North Carolina at Charlotte", 
-  "BA in Spanish and German, 2016 <br>he University of North Carolina at Charlotte"))
+  "BA in Spanish and German, 2016 <br>The University of North Carolina at Charlotte"))
 ```
 
 :::

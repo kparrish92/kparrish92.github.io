@@ -4,6 +4,7 @@ image: "img/kp_2.JPG"
 output:
   postcards::trestles
 ---
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
 
@@ -24,15 +25,13 @@ print_list <- function(text = "text", fa = "fas fa-graduation-cap") {
 
 <p align="justify">
 I see the classroom as a **safe space** and **student centered**.
-Essentially, I see teaching as a reinforcement of these two principles; making the classroom a safe and inclusive place for people (people in the broadest sense of the word including all races, creeds, and identities) and also a place where the student feels in control of their education.
-
+Essentially, I see teaching as a reinforcement of these two principles; making the classroom a safe and inclusive place for people (people in the broadest sense of the word including all ethnicities, creeds, and identities) and also a place where the student feels in control of their education.
 Starting out, I was fortunate enough to have tutored undergraduate students in Spanish and German language at the University Center for Academic Excellence at the University of North Carolina at Charlotte.
 Following this, I became a graduate teaching assistant during my Masters degree at the same institution, where I came to very much enjoy sharing my passion for languages with first and second year students as I taught Spanish courses in a hybrid format (before covid made these cool).
 After graduating with my Masters, I became a full time college instructor as a fellow in which I taught in both full time and hybrid contexts.
 I was able to continue teaching during my doctoral studies at Rutgers University, where I taught a variety of in-person and online courses. 
 Additionally, I taught Spanish courses as an Adjunct Faculty member at Mercer County Community College during my PhD.
 These days, I have the good fortune to teach courses in Hispanic linguistics at Goethe University in three languages! I teach intro to Syntax in German, Phonetics in Spanish, and several courses in English. 
-
 </p>
 
 
@@ -69,7 +68,7 @@ print_list(
   "Adjunct Faculty, 2022-2023 <br>Mercer County Community College", 
   "Teaching Assistant, 2019-2023 <br>Rutgers University", 
   "Masters Teaching Fellow, 2018 <br>The University of North Carolina at Charlotte", 
-  "Teaching Assistant, 2017 <br>he University of North Carolina at Charlotte"))
+  "Teaching Assistant, 2017 <br>The University of North Carolina at Charlotte"))
 ```
 
 :::
