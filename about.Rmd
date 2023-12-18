@@ -1,5 +1,5 @@
 ---
-title: "Kyle Parrish<br>"
+title: "Kyle Parrish"
 image: "img/kp_2.JPG"
 links:
   - label: <i id="icons" class="fas fa-envelope big-icon"></i>

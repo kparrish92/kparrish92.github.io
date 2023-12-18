@@ -1,5 +1,5 @@
 ---
-title: "Research<br>"
+title: "Research"
 image: "img/kp_2.JPG"
 output:
   postcards::trestles
