@@ -20,6 +20,8 @@ print_list <- function(text = "text", fa = "fas fa-graduation-cap") {
 
 ### Publications
 
+**Parrish, K.** (2024) Statistical insignificance is not practical equivalence: A Conceptual Replication of Rothman (2011).
+
 **Parrish, K** (2023). A Simulated Analysis of Repeated Measures in VOT: We need more tokens! *ICPhS 2023*. [link](https://guarant.cz/icphs2023/900.pdf)
 
 Casillas, J. V., Garrido-Pozú, J. J., **Parrish, K**., Arroyo, L. F., Rodríguez, N., Esposito, R., ... & Taveras, K. (2023). Using intonation to disambiguate meaning: The role of empathy and proficiency in L2 perceptual development. *Applied Psycholinguistics*. [DOI](https://doi.org/10.1017/S0142716423000310)
@@ -28,13 +30,6 @@ Casillas, J. V., Garrido-Pozú, J. J., **Parrish, K**., Arroyo, L. F., Rodrígue
 
 **Parrish, K.** (2022). The Production of L3 French stop-initial words by Spanish/English bilinguals. *The International Journal of Multilingualism*. [DOI](https://doi.org/10.1080/14790718.2022.2060234)
 
-### Manuscripts under review
-
-**Parrish, K.** (in progress) Statistical insignificance is not practical equivalence: A Conceptual Replication of Rothman (2011).
-
-### Manuscripts in progress
-
-Garrido-Pozú, J. J. and **Parrish, K.** (in preparation). The effects of lexical  frequency on vowel duration in Spanish monolinguals
 
 ### Conference Presentations
 
