@@ -27,12 +27,14 @@ print_list <- function(text = "text", fa = "fas fa-graduation-cap") {
 }
 ```
 
-### Postdoctoal Researcher
+### Lecturer
 
-#### Goethe University Frankfurt
+#### SUNY Brockport
 
 <p align="justify">
-I am a Postdoctoral Researcher at Goethe University Frankfurt in the Institute for Romance Languages and Literatures. I hold a PhD in Second Language Acquisition and Bilingualism from the Department of Spanish and Portuguese at Rutgers University.
+I am a lecturer of Spanish at SUNY Brockport in the Department of Education, Languages and Instructional Design.
+Previously, I was a Postdoctoral Researcher at Goethe University Frankfurt in the Institute for Romance Languages and Literatures. 
+I hold a PhD in Second Language Acquisition and Bilingualism from the Department of Spanish and Portuguese at Rutgers University.
 My main interests are in third language acquisition, quantitative methods, phonetics and phonology, and language pedagogy. 
 The primary aim of my research is to investigate how Spanish-English bilinguals acquire the phonetics and phonology of a third language.
 Additionally, I am interested in how the statistical tools that we use in research relate to our narrative conclusions.
