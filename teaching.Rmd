@@ -31,7 +31,8 @@ Following this, I became a graduate teaching assistant during my Masters degree 
 After graduating with my Masters, I became a full time college instructor as a fellow in which I taught in both full time and hybrid contexts.
 I was able to continue teaching during my doctoral studies at Rutgers University, where I taught a variety of in-person and online courses. 
 Additionally, I taught Spanish courses as an Adjunct Faculty member at Mercer County Community College during my PhD.
-These days, I have the good fortune to teach courses in Hispanic linguistics at Goethe University in three languages! I teach intro to Syntax in German, Phonetics in Spanish, and several courses in English. 
+From 2023-2025, I had the good fortune to teach courses in Hispanic linguistics at Goethe University in three languages! I taught intro to Syntax in German, Phonetics in Spanish, and several courses in English. 
+I currently teach a variety of Spanish courses at SUNY Brockport, ranging from first semester general education to graduate courses.
 </p>
 
 
@@ -64,7 +65,8 @@ glue::glue("{ul}{elements}")
 ```{r, print-ed, echo=F, results='asis'}
 print_list(
   text = c(
-  "Postdoctoral Researcher, 2023-Current <br>Goethe University Frankfurt", 
+  "Lecturer, 2025-Present <br>SUNY Brockport", 
+  "Postdoctoral Researcher, 2023-2025 <br>Goethe University Frankfurt", 
   "Adjunct Faculty, 2022-2023 <br>Mercer County Community College", 
   "Teaching Assistant, 2019-2023 <br>Rutgers University", 
   "Masters Teaching Fellow, 2018 <br>The University of North Carolina at Charlotte", 

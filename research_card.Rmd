@@ -18,9 +18,15 @@ print_list <- function(text = "text", fa = "fas fa-graduation-cap") {
 }
 ```
 
+### Submitted 
+
+**Parrish, K.** (second round of review) The Double Phonemic Boundary Effect in L3 acquisition: the perception of 'French' and 'Hungarian' stops by Spanish-English bilinguals.
+
 ### Publications
 
-**Parrish, K.** (2024) Statistical insignificance is not practical equivalence: A Conceptual Replication of Rothman (2011).
+Casillas, J. V., Constantin-Dureci, G., Andreu Rascón, I., Shao, J., Rodríguez, S. A., Gadamsetty, A., ...**Parrish, K**. & Esposito, R. (2025). Opening open science to all: demystifying reproducibility and transparency practices in linguistic research. *Linguistics*, 63(6), 1547-1575.
+
+**Parrish, K. (2024)**. Statistical Insignificance is not wholesale transfer in L3 Acquisition: An approximate replication of Rothman (2011). *Studies in Second Language Acquisition*, 46(5), 1439-1456.
 
 **Parrish, K** (2023). A Simulated Analysis of Repeated Measures in VOT: We need more tokens! *ICPhS 2023*. [link](https://guarant.cz/icphs2023/900.pdf)
 
@@ -31,7 +37,23 @@ Casillas, J. V., Garrido-Pozú, J. J., **Parrish, K**., Arroyo, L. F., Rodrígue
 **Parrish, K.** (2022). The Production of L3 French stop-initial words by Spanish/English bilinguals. *The International Journal of Multilingualism*. [DOI](https://doi.org/10.1080/14790718.2022.2060234)
 
 
-### Conference Presentations
+### Conference Presentations and Posters
+
+Gomes, J., Martinez Bruera, M., **Parrish, K.**, Oltrogge, E. (2026), The effect of coarticulation on L2 spoken word recognition. 39th Annual Conference on Human Sentence Processing. Cambridge, MA. 
+
+**Parrish K.**, Darvishi Rokni, N. Goncalves Miranda, L, Selma Inam, S & Zschernack, P. (2025) A systematic review and analysis of repeated measures designs in Language Learning. The First Workshop on Replication in the Language Sciences (WoReLa1). Goethe Universität Frankfurt. Frankfurt am Main, Germany.
+
+**Parrish, K.**, (2025) Multilevel models can induce biased individual estimates: a simulation of L3 VOT production. The 15th International Symposium on Bilingualism. Basque Center for Language and Cognition, San Sebastian, Spain.
+
+**Parrish, K.** (2024) The Cognate Facilitation Effect in L3 lexical processing. EUROSLA 33: The 33rd Conference of the European Second Language Association. Montpellier, France.
+
+**Parrish, K.** (2023) A conceptual replication of Rothman (2011): L3 Syntactic Transfer Selectivity and Typological Determinacy. The 14th International Symposium on Bilingualism. Macquarie University, Sydney, Australia.
+
+**Parrish, K.** (2023) A Simulated Analysis of repeated measures in VOT: We need more tokens! 20th International Congress of Phonetic Sciences (ICPhS). Prague Conference Center, Prague, Czech Republic.
+
+**Parrish, K.** (2023) Multilevel models can induce biased individual estimates: a simulation of L3 VOT production. The 15th International Symposium on Bilingualism. Basque Center for Language and Cognition, San Sebastian, Spain.
+
+**Parrish, K.** How low sample sizes can lead to erroneous conclusions: A practical introduction to power analysis in R. Hispanic Linguistics Symposium. Arizona State University, Tempe, Arizona.
 
 **Parrish, K,**. (2022). The Categorization of L3 French sounds at first exposure by Spanish-English bilinguals. The 10th International Symposium on the Acquisition of Second Language Speech. University of Barcelona. 
 
